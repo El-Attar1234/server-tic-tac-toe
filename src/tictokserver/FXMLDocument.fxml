@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <FlowPane layoutX="29.0" layoutY="14.0" prefHeight="51.0" prefWidth="729.0">
+               <children>
+                  <Label prefHeight="56.0" prefWidth="234.0" text="              Online" textAlignment="JUSTIFY" wrapText="true" />
+                  <Label prefHeight="53.0" prefWidth="221.0" text="                   Offline" />
+                  <Label prefHeight="54.0" prefWidth="252.0" text="                      On game" />
+               </children>
+            </FlowPane>
+            <ImageView fx:id="stopButton" fitHeight="150.0" fitWidth="200.0" layoutX="603.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@stop.png" />
+               </image>
+            </ImageView>
+            <FlowPane layoutX="26.0" layoutY="85.0" prefHeight="359.0" prefWidth="729.0">
+               <children>
+                  <TextArea fx:id="onlineText" editable="false" prefHeight="330.0" prefWidth="220.0">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </TextArea>
+                  <TextArea fx:id="offlineText" editable="false" prefHeight="330.0" prefWidth="220.0">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </TextArea>
+                  <TextArea fx:id="ongameText" editable="false" prefHeight="330.0" prefWidth="220.0">
+                     <FlowPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </TextArea>
+               </children>
+            </FlowPane>
+            <PieChart fx:id="pieChart" layoutX="38.0" layoutY="435.0" prefHeight="213.0" prefWidth="367.0" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
